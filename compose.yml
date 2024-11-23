@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app   # Atualiza o código dentro do container automaticamente
+    ports:
+      - "8085:8085"
